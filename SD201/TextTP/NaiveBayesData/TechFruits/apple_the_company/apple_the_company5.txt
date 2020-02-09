@@ -1,0 +1,1 @@
+We gave a lot of consideration to the way MacBook connects to peripherals and power. We chose USB-C for its compact design and versatility. This single port lets you connect your charger; HDMI, DisplayPort, and VGA displays; USB devices like external drives; and your iPhone or iPad. All of which goes to show that sometimes less really is more.

@@ -1,0 +1,1 @@
+In July 2016, Microsoft launched a series of classes in data science through edX.org, the nonprofit online learning destination founded by Harvard University and MIT. The Data Science Curriculum is the first offering of the Microsoft Professional Degree program, a Microsoft-led initiative to help professionals grow their skills in critical fields.

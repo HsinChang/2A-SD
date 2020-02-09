@@ -1,0 +1,15 @@
+﻿Apple has added a new entry to its Machine Learning Journal with in-depth technical details about how it uses differential privacy to gather anonymous usage insights from devices like iPhones, iPads, and Macs. 
+At a high level, differential privacy allows Apple to crowdsource data from a large number of users without compromising the privacy of any individual. 
+There are two types of differential privacy: central and local. Apple has chosen to use the local setting, which means that data is randomized before being sent from devices, so that its servers never see or receive raw data from users. 
+When users set up their device, Apple explicitly asks users if they wish to provide usage information on an opt-in basis. If a user declines, no data is collected by Apple unless they choose to opt in at a later time. 
+The toggle for sending usage information can be found under Settings > Privacy > Analytics on iOS 10 and later and under System Preferences > Security & Privacy > Privacy > Analytics on macOS Sierra and later. 
+Apple says the data it collects helps to, for example, improve the QuickType keyboard's predictive words and emoji suggestions, and to help identify problematic websites that use excessive power or too much memory in Safari. 
+An opted-in user who types an emoji, for example, may trigger usage information to be collected based on the following process: 
+• The data is immediately privatized via local differential privacy. 
+• The data is temporarily stored on-device using a technology called Data Protection, which is explained on page 11 of Apple's iOS Security Guide. 
+• After a delay, a random sample of the data is collected and sent to Apple's server.
+The data sent to Apple does not include device identifiers or timestamps of when the events in the usage information occurred. The communication between a device and Apple's server is encrypted using TLS.
+In iOS, information being shared with Apple for the categories of data that are protected using Differential Privacy is visible under Settings > Privacy > Analytics > Analytics Data, in entries that begin with "DifferentialPrivacy." 
+In macOS, users can launch the Console app and view the information under the Differential Privacy category of System Reports. 
+On a side note, the blog post reveals that "Face With Tears of Joy" is the most popular emoji, used by more than 25 percent of English-speaking users of Apple devices. We saw this chart before, but now it's labeled along the y-axis.
+For a detailed explanation of the mathematical algorithms that Apple is using, the Learning with Privacy at Scale entry in its Machine Learning Journal is a worthwhile read.
